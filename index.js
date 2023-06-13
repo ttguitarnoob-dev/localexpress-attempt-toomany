@@ -1,9 +1,13 @@
 const express = require('express')
 const app = express()
+const stinkControllers = require('./controllers/stinks')
 
 
 //Config
 const PORT = 9000
+
+//Middleware
+app.use('/stinks', stinkControllers)
 
 
 //Home Route
