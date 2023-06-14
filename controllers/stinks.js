@@ -16,7 +16,11 @@ router.get('/', (req, res) => {
 })
 
 //Show
-router.get('/:id')
+router.get('/:id', (req, res) =>  {
+    res.json({
+        message: "showing one thingy"
+    })
+})
 
 //Create
 router.post('/', (req, res) => {
